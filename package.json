@@ -1,0 +1,14 @@
+{
+  "name": "gostandup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch src/main/webapp/resources/styles/main.sass:./src/main/webapp/resources/styles/index.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
