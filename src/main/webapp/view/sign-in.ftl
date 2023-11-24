@@ -11,7 +11,7 @@
 </head>
 <body>
 <header>
-    <h1>Войди в аккаунт пж</h1>
+    <h1>ВХОД</h1>
 </header>
 
 <form>
