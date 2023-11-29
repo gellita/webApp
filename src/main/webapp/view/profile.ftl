@@ -12,7 +12,10 @@
 <header>
     <h1>ПРОФИЛЬ</h1>
 </header>
-<form>
+<section>
+    <div class="img__container">
+        <img src="./resources/images/avatar.png">
+    </div>
     <div class="user__container">
 <#--        <div class="user__bio">${user.firstName}</div>-->
 <#--        <div class="user__bio">${user.lastName}</div>-->
@@ -21,7 +24,7 @@
         <div class="user__bio">lastname</div>
         <div class="user__bio"> email@email.email</div>
     </div>
-</form>
+</section>
 
 </body>
 </html>

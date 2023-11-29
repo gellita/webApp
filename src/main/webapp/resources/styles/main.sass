@@ -1,3 +1,7 @@
+\:root
+  --main-hd-color: rgba(4, 42, 168, 0.71)
+  --main-bg-color: rgba(4, 42, 168)
+
 body
   background-color: lightgray
 
@@ -18,7 +22,7 @@ header
   top: 0
   color: white
   height: 400px
-  background-image: linear-gradient(to right, rgba(36, 36, 42, 0.71) 0%, rgba(4, 42, 168, 0.71) 100%),url(../images/Collage.jpg)
+  background-image: linear-gradient(to right, rgba(36, 36, 42, 0.71) 0%, var(--main-hd-color) 100%),url(../images/Collage.jpg)
   background-size: cover
   background-repeat: no-repeat
 
@@ -38,6 +42,42 @@ input
   align-items: center
   flex-direction: column
 
+//.user
+//  &__container
+
+section
+  background-color: rgb(236, 236, 235)
+  width: 800px
+  display: flex
+  margin: 200px auto auto
+  position: relative
+  height: 450px
+
+.img
+  &__container
+    background-color: var(--main-bg-color)
+    width: 40%
+    height: inherit
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      height: 400px
+      width: 320px
+      object-fit: contain
+
 .user
   &__container
-    
+    margin: auto
+    font-size: 2rem
+    border: 2px solid var(--main-bg-color)
+    border-radius: 4px
+
+  &__bio
+    margin: 8px
+
+
+
+
+
