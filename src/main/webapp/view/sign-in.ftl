@@ -13,14 +13,13 @@
 <header>
     <h1>ВХОД</h1>
 </header>
-
-<form>
-    <div class="Email">
+<form method="post">
+    <div class="box">
     <label>
         <input type="email" placeholder="введите email">
     </label>
     </div>
-    <div class="Password">
+    <div class="box">
     <label>
         <input  type="password" placeholder="введите пароль">
     </label>

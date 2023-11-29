@@ -20,7 +20,9 @@ header {
   top: 0;
   color: white;
   height: 400px;
-  background-image: linear-gradient(to right, rgba(33, 33, 33, 0.79) 0%, rgba(234, 7, 7, 0.88) 100%), url(../images/background-header.jpg);
+  background-image: linear-gradient(to right, rgba(36, 36, 42, 0.71) 0%, rgba(4, 42, 168, 0.71) 100%), url(../images/Collage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header h1 {
@@ -34,7 +36,7 @@ input {
   margin: 16px;
 }
 
-.Email, .Password {
+.box {
   display: flex;
   justify-content: center;
   align-items: center;
