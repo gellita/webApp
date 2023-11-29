@@ -25,6 +25,10 @@
     </label>
     </div>
     <input type="submit">
+    <p>Ещё нет аккаунта?
+        <a href="sign-up.ftl">Зарегистрируйся!</a>
+    </p>
 </form>
+
 </body>
 </html>
