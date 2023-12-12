@@ -1,4 +1,4 @@
-package ru.itis.car_parking.repositories.generic;
+package ru.itis.go_standup.repositories.generic;
 
 import java.util.List;
 import java.util.Optional;

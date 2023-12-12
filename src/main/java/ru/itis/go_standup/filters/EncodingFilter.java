@@ -1,4 +1,4 @@
-package ru.itis.car_parking.filters;
+package ru.itis.go_standup.filters;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;

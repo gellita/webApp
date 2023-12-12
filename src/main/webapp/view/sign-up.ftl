@@ -17,30 +17,37 @@
 <form method="post">
     <div class="box">
     <label>
-        <input type="text" placeholder="введите имя">
+        <input name="firstName" type="text" placeholder="введите имя">
     </label>
     </div>
     <div class="box">
     <label>
-        <input type="text" placeholder="введите фамилию">
+        <input name="lastName" type="text" placeholder="введите фамилию">
     </label>
     </div>
-    <div class="box">
-    <label>
-        <input type="date" placeholder="введите дату рождения">
-    </label>
-    </div>
+
     <div class="box">
         <label>
-            <input type="email" placeholder="введите email">
+            <input name="email" type="email" placeholder="введите email">
         </label>
     </div>
     <div class="box">
         <label>
-            <input  type="password" placeholder="введите пароль">
+            <input name="password"  type="password" placeholder="введите пароль">
         </label>
     </div>
-    <input type="submit">
+<#--    <div class="box">-->
+<#--        <label>-->
+<#--            <input type="date" placeholder="введите дату рождения">-->
+<#--        </label>-->
+<#--    </div>-->
+    <p>Уже есть аккаунт?
+        <a href="sign-in">Войти</a>
+    </p>
+    <#if errorMessage??>
+        <div class="error_message">${errorMessage}</div>
+    </#if>
+    <input class="login-button" type="submit">
 </form>
 </body>
 </html>

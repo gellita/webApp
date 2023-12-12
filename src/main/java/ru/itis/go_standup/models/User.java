@@ -1,4 +1,4 @@
-package ru.itis.car_parking.model;
+package ru.itis.go_standup.models;
 
 import lombok.Builder;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.util.UUID;
 @Builder
 public class User {
     private UUID id;
-    private String fistName;
+    private String firstName;
     private String lastName;
     private String email;
     private String passwordHash;

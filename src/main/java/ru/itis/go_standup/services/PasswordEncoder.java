@@ -1,4 +1,4 @@
-package ru.itis.car_parking.services;
+package ru.itis.go_standup.services;
 
 public interface PasswordEncoder {
     boolean matches(String password, String hashPassword);

@@ -1,12 +1,11 @@
-package ru.itis.car_parking.services;
+package ru.itis.go_standup.services;
 
-import ru.itis.car_parking.dto.SignInForm;
-import ru.itis.car_parking.dto.SignUpForm;
-import ru.itis.car_parking.dto.UserDto;
-import ru.itis.car_parking.model.User;
+import ru.itis.go_standup.dto.SignUpDTO;
+import ru.itis.go_standup.dto.UserDTO;
+import ru.itis.go_standup.models.User;
 
 public interface UserMapper {
-    UserDto toDto(User user);
-    User toUser(UserDto dto);
-    User toUser(SignUpForm dto);
+    UserDTO toDTO(User user);
+    User toUser(UserDTO dto);
+    User toUser(SignUpDTO dto);
 }

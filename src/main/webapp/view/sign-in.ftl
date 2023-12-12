@@ -16,17 +16,20 @@
 <form method="post">
     <div class="box">
     <label>
-        <input type="email" placeholder="введите email">
+        <input name="email" type="email" placeholder="введите email">
     </label>
     </div>
     <div class="box">
     <label>
-        <input  type="password" placeholder="введите пароль">
+        <input name="password" type="password" placeholder="введите пароль">
     </label>
     </div>
+    <#if errorMessage??>
+        <div class="error_message">${errorMessage}</div>
+    </#if>
     <input type="submit">
     <p>Ещё нет аккаунта?
-        <a href="sign-up.ftl">Зарегистрируйся!</a>
+        <a href="sign-up">Зарегистрируйся!</a>
     </p>
 </form>
 

@@ -1,11 +1,14 @@
-package ru.itis.car_parking.repositories.impl;
+package ru.itis.go_standup.repositories.impl;
+
 
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
-import ru.itis.car_parking.model.User;
-import ru.itis.car_parking.repositories.UsersRepository;
+import ru.itis.go_standup.models.User;
+import ru.itis.go_standup.repositories.UsersRepository;
+
+
 
 import javax.sql.DataSource;
 import java.sql.Date;
@@ -20,13 +23,13 @@ public class UsersRepositoryImpl implements UsersRepository {
 
     private final JdbcTemplate jdbcTemplate;
     private final static String SQL_SELECT_ALL = "select * from users;";
-    private final static String SQL_INSERT = "insert into users (first_name, last_name, password, email, birthdate) VALUES (?, ?, ?, ?, ?);";
+    private final static String SQL_INSERT = "insert into users (first_name, last_name, password, email) VALUES (?, ?, ?, ?);";
     private final static String SQL_SELECT_BY_ID = "select * from users where id = ?;";
     private final static String SQL_SELECT_BY_EMAIL = "select * from users where email = ?";
 
     private final RowMapper<User> rowMapper = (row, rowNumber) -> User.builder()
             .id((UUID) row.getObject("id"))
-            .fistName(row.getString("first_name"))
+            .firstName(row.getString("first_name"))
             .lastName(row.getString("last_name"))
             .email(row.getString("email"))
             .passwordHash(row.getString("password"))
@@ -66,12 +69,12 @@ public class UsersRepositoryImpl implements UsersRepository {
             GeneratedKeyHolder keyHolder = new GeneratedKeyHolder();
             jdbcTemplate.update(connection -> {
                 PreparedStatement statement = connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
-                statement.setString(1, item.getFistName());
+                statement.setString(1, item.getFirstName());
                 statement.setString(2, item.getLastName());
                 statement.setString(3, item.getPasswordHash());
                 statement.setString(4, item.getEmail());
-                Instant birthdate = item.getBirthdate();
-                statement.setDate(5, new Date(birthdate.getEpochSecond()));
+//                Instant birthdate = item.getBirthdate();
+//                statement.setDate(5, new Date(birthdate.getEpochSecond()));
                 return statement;
             }, keyHolder);
             UUID id = (UUID) keyHolder.getKeys().get("id");

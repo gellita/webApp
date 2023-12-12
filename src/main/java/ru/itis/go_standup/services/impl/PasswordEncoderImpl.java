@@ -1,6 +1,7 @@
-package ru.itis.car_parking.services.impl;
+package ru.itis.go_standup.services.impl;
 
-import ru.itis.car_parking.services.PasswordEncoder;
+
+import ru.itis.go_standup.services.PasswordEncoder;
 
 public class PasswordEncoderImpl implements PasswordEncoder {
     @Override

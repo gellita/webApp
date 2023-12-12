@@ -1,3 +1,5 @@
+<#-- @ftlvariable name="user" type="ru.itis.go_standup.dto.UserDTO" -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -10,20 +12,21 @@
 </head>
 <body>
 <header>
-    <h1>ПРОФИЛЬ</h1>
 </header>
+<#include "header.ftl">
 <section>
     <div class="img__container">
-        <img src="./resources/images/avatar.png">
+        <img src="./resources/images/avatar.png" alt="avatar">
     </div>
     <div class="user__container">
-<#--        <div class="user__bio">${user.firstName}</div>-->
-<#--        <div class="user__bio">${user.lastName}</div>-->
-<#--        <div class="user__bio">${user.email}</div>-->
-        <div class="user__bio">user</div>
-        <div class="user__bio">lastname</div>
-        <div class="user__bio"> email@email.email</div>
+        <div class="user__inf">
+            <div class="user__bio">${user.firstName}</div>
+            <div class="user__bio">${user.lastName}</div>
+            <div class="user__bio">${user.email}</div>
+        </div>
+        <p><a href="sign-out">Выйти из аккаунта</a></p>
     </div>
+
 </section>
 
 </body>

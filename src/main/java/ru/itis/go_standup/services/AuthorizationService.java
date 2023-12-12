@@ -1,11 +1,10 @@
-package ru.itis.car_parking.services;
-
-import ru.itis.car_parking.dto.SignInForm;
-import ru.itis.car_parking.dto.SignUpForm;
-import ru.itis.car_parking.dto.UserDto;
-import ru.itis.car_parking.exceptions.ParkingException;
+package ru.itis.go_standup.services;
+import ru.itis.go_standup.dto.SignInDTO;
+import ru.itis.go_standup.dto.SignUpDTO;
+import ru.itis.go_standup.dto.UserDTO;
+import ru.itis.go_standup.exceptions.StandupException;
 
 public interface AuthorizationService {
-    UserDto signUp(SignUpForm form) throws ParkingException;
-    UserDto signIn(SignInForm form) throws ParkingException;
+    UserDTO signUp(SignUpDTO form) throws StandupException;
+    UserDTO signIn(SignInDTO form) throws StandupException;
 }

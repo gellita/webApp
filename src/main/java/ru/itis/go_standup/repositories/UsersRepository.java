@@ -1,7 +1,7 @@
-package ru.itis.car_parking.repositories;
+package ru.itis.go_standup.repositories;
 
-import ru.itis.car_parking.model.User;
-import ru.itis.car_parking.repositories.generic.CrudRepository;
+import ru.itis.go_standup.models.User;
+import ru.itis.go_standup.repositories.generic.CrudRepository;
 
 import java.util.Optional;
 

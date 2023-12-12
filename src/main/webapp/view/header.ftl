@@ -9,7 +9,6 @@
     <title>Go Standup</title>
 </head>
 <body>
-<header></header>
 <nav class="header__navigation">
     <ul class="header__list">
         <li class="header__list__item"><a href="news"> новости</a></li>
