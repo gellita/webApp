@@ -17,23 +17,23 @@
 <form method="post">
     <div class="box">
     <label>
-        <input name="firstName" type="text" placeholder="введите имя">
+        <input name="firstName" type="text" placeholder="введите имя" required>
     </label>
     </div>
     <div class="box">
     <label>
-        <input name="lastName" type="text" placeholder="введите фамилию">
+        <input name="lastName" type="text" placeholder="введите фамилию" required>
     </label>
     </div>
 
     <div class="box">
         <label>
-            <input name="email" type="email" placeholder="введите email">
+            <input name="email" type="email" placeholder="введите email" required>
         </label>
     </div>
     <div class="box">
         <label>
-            <input name="password"  type="password" placeholder="введите пароль">
+            <input name="password"  type="password" placeholder="введите пароль" required>
         </label>
     </div>
 <#--    <div class="box">-->
@@ -47,7 +47,7 @@
     <#if errorMessage??>
         <div class="error_message">${errorMessage}</div>
     </#if>
-    <input class="login-button" type="submit">
+    <input class="login-button" type="submit" value="Зарегестрироваться">
 </form>
 </body>
 </html>

@@ -19,6 +19,8 @@ a {
 
 body {
   background-color: lightgray;
+  display: flex;
+  flex-direction: column;
 }
 
 li {
@@ -125,6 +127,19 @@ section {
   justify-content: center;
   align-items: center;
   margin: auto;
+}
+
+.profile {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.profile img {
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -16,18 +16,18 @@
 <form method="post">
     <div class="box">
     <label>
-        <input name="email" type="email" placeholder="введите email">
+        <input name="email" autocapitalize="off" type="email" placeholder="введите email" required>
     </label>
     </div>
     <div class="box">
     <label>
-        <input name="password" type="password" placeholder="введите пароль">
+        <input name="password" type="password" placeholder="введите пароль" required>
     </label>
     </div>
     <#if errorMessage??>
         <div class="error_message">${errorMessage}</div>
     </#if>
-    <input type="submit">
+    <input type="submit" value="Войти">
     <p>Ещё нет аккаунта?
         <a href="sign-up">Зарегистрируйся!</a>
     </p>

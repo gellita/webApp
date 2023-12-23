@@ -11,9 +11,8 @@
 <body>
 <nav class="header__navigation">
     <ul class="header__list">
-        <li class="header__list__item"><a href="news"> новости</a></li>
+        <li class="header__list__item"><a href="profile"> профиль</a></li>
         <li class="header__list__item"><a href="afisha"> афиша</a></li>
-        <li class="header__list__item"><a href="comics"> комики</a></li>
     </ul>
 
 </nav>

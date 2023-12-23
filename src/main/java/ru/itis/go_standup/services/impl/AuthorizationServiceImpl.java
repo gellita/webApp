@@ -21,8 +21,8 @@ public class AuthorizationServiceImpl implements AuthorizationService {
 
     @Override
     public UserDTO signUp(SignUpDTO form) throws StandupException {
-        if (form.getEmail() == null) {
-            throw new StandupException("Email cannot be null");
+        if (form.getEmail() == null || form.getPassword() == null || form.getFirstName() == null || form.getLastName() == null) {
+            throw new StandupException("Please fill out all required fields.");
         }
         Optional<User> optionalUser = usersRepository.findByEmail(form.getEmail());
         if (optionalUser.isPresent()) {

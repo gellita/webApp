@@ -14,7 +14,6 @@ public class UserMapperImpl implements UserMapper {
                 .firstName(user.getFirstName())
                 .lastName(user.getLastName())
                 .email(user.getEmail())
-//                .birthdate(user.getBirthdate())
                 .build();
     }
 
@@ -24,7 +23,6 @@ public class UserMapperImpl implements UserMapper {
                 .firstName(dto.getFirstName())
                 .lastName(dto.getLastName())
                 .email(dto.getEmail())
-//                .birthdate(dto.getBirthdate())
                 .build();
     }
 
@@ -34,7 +32,6 @@ public class UserMapperImpl implements UserMapper {
                 .firstName(dto.getFirstName())
                 .lastName(dto.getLastName())
                 .email(dto.getEmail())
-//                .birthdate(dto.getBirthdate())
                 .passwordHash(dto.getPassword())
                 .build();
     }

@@ -1,0 +1,87 @@
+
+h1{
+    margin: auto;
+}
+.likeButton {
+    cursor: pointer;
+    color: white;
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out; /* Добавлено для плавного перехода цвета */
+}
+
+.likeButton.liked {
+    color: red;
+}
+
+.event{
+    border-radius: 4px;
+    border: 2px solid var(--main-bg-color);
+    display: flex;
+    width: 1000px;
+    padding: 5px;
+}
+.event img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.events{
+    display: flex;
+    justify-content: center;
+}
+.description{
+    font-size: 2rem;
+    margin: 24px;
+}
+.buy__ticket__btn{
+    height: 40px;
+    width: 150px;
+    background-color:  var(--main-bg-color);
+    border: 0;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.buy__ticket__btn:hover{
+    transform: scale(1.1);
+
+}
+
+.favorite-btn {
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-bg-color);
+    transform: rotate(45deg);
+    position: relative;
+    border: 0;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.favorite-btn::before,
+.favorite-btn::after {
+    content : '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--main-bg-color);
+    border-radius: 50%;
+    position: absolute;
+
+}
+.favorite-btn::before {
+    top: -13px;
+    left: 0;
+}
+.favorite-btn::after {
+    top: 0;
+    left: -13px;
+}
+.favorite-btn.active,
+.favorite-btn.active::before,
+.favorite-btn.active::after {
+    background-color: red;
+}

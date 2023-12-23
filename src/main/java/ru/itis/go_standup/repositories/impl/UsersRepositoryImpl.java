@@ -11,7 +11,6 @@ import ru.itis.go_standup.repositories.UsersRepository;
 
 
 import javax.sql.DataSource;
-import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.time.Instant;
@@ -73,19 +72,17 @@ public class UsersRepositoryImpl implements UsersRepository {
                 statement.setString(2, item.getLastName());
                 statement.setString(3, item.getPasswordHash());
                 statement.setString(4, item.getEmail());
-//                Instant birthdate = item.getBirthdate();
-//                statement.setDate(5, new Date(birthdate.getEpochSecond()));
                 return statement;
             }, keyHolder);
             UUID id = (UUID) keyHolder.getKeys().get("id");
             item.setId(id);
             return item;
         } else {
-            // TODO: - реализовать обновление
             return null;
         }
     }
-    // TODO: - реализовать
+
     @Override
-    public void delete(Integer id) {}
+    public void delete(Integer id) {
+    }
 }
